@@ -1,2 +1,2 @@
 # wargames
-wargame/challenge solutions
+wargame/challenge solutions. WARNING: SPOILERS AHOY.
