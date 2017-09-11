@@ -1,0 +1,2 @@
+# wargames
+wargame/challenge solutions
