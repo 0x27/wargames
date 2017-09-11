@@ -34,3 +34,19 @@ bin:*:14525:0:99999:7:::
 daemon:*:14525:0:99999:7:::
 sh-3.00# $ 
 ```
+
+You should note, all the bullshit login logic is actually totally unnecessary. The "pingit.php" endpoint can be hit directly. I just implemented it all for the craic.
+
+```
+$ cat pingit.php
+<?php
+
+print $_POST['ip'];
+if (isset($_POST['submit'])){
+        $target = $_REQUEST[ 'ip' ];
+        echo '<pre>';
+        echo shell_exec( 'ping -c 3 ' . $target );
+        echo '</pre>';
+    }
+?>
+```
